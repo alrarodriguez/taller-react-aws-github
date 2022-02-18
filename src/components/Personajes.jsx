@@ -14,8 +14,8 @@ function Personajes(props)
         //Petición
         async function request() {
 
-            const res = await axios.get("https://rickandmortyapi.com/api/character/?page=2");
-            //const res = await axios.get(`https://rickandmortyapi.com/api/character/?page=${pagina}`);
+            //const res = await axios.get("https://rickandmortyapi.com/api/character/?page=2");
+            const res = await axios.get(`https://rickandmortyapi.com/api/character/?page=${pagina}`);
 
             console.log(res.data.results);
 
